@@ -33,42 +33,66 @@ width:150px;
   width: 200px;
 }*/
 
+
+hr {
+ color: #008080
+}
 .header{
   height: 70px;
   display:flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #6b6e70;
+  background-color: none;
   border: none;
 }
 
 .burger{
-  width: 60px;
-  padding: 15px 0 25px 10px;
-  transition: background-color .15s;
+  display:flex;
+  flex-direction: row;
+  width: 50px;
   cursor: pointer;
+  margin-top: 0;
 }
 
-.burger:hover{
-  background-color: #a4a4a4;
+.cyber{
+
+  height: 50px;
+  width: 150px;
+  margin-top: 10px;
 }
 
 .ham{
-  margin-top: 5px;
-  width: 30px;
+  width: 70px;
+}
+
+.text{
+display: flex;
+flex-direction:row;
 }
 
 .search{
   font-family: Roboto, Arial;
-  border: solid;
+  border:solid;
   height: 40px;
   width: 450px;
   margin-top: 13px;
   padding-left: 10px;
-  border-radius: 50px;
-  border-color: #3d3d3d;
-  font-size: 20px;
+  border-color: gray;
+  border-width: 1px;
+  font-size: 15px;
+
 }
+.serbut{
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+  margin-top:13px;
+  border: solid;
+  border-color: gray;
+  border-width: 1px;
+  padding:6px 5px 6px 5px;
+}
+
 
 .inn{
   display: flex;
@@ -86,8 +110,8 @@ width:150px;
   padding: 10px 20px 10px 20px;
   border-radius: 10px;
   cursor: pointer;
-  transition: background-color .15s, color .15s;
   margin-right: 20px;
+  transition: background-color .15s, color .15s;
 }
 
 .log:hover{
@@ -116,15 +140,15 @@ width:150px;
 }
 
 .buttons{
-  height: 35px;
-  background-color: #a4a4a4;
-  border:none;
-  top: 0;
-  background-color: green;
+  margin-top: 5px;
+  height: 50px;
+  background-color: #008080;
+  background-color:none;
   color: white;
   display: flex;
   flex-direction: row;
   justify-content: end;
+  padding-top:15px;
 }
 
 .home{
@@ -135,7 +159,12 @@ padding:10px 15px 5px 5px;
   font-family: Arial;
   margin-right: 10px;
   cursor: pointer;
-  transition: background-color .15s, border .15s, padding .15s;
+  transition: color .15s;
+}
+
+a{
+  color:white;
+  text-decoration: none;
 }
 
 .about{
@@ -143,33 +172,28 @@ padding:10px 15px 5px 5px;
 }
 
 .bahay:hover{
-background-color: #26580f;
+color:#fdd700;
 border: none;
-padding: 10px 5px 10px 5px;
 }
 
 .mob:hover{
-  background-color: #26580f;
+  color:#fdd700;
   border: none;
-  padding: 10px 5px 10px 5px;
 }
 
 .computer:hover{
-  background-color: #26580f;
+  color:#fdd700;
   border: none;
-  padding: 10px 5px 10px 5px;
 }
 
 .tech:hover{
-  background-color: #26580f;
+  color:#fdd700;
   border: none;
-  padding: 10px 5px 10px 5px;
 }
 
 .about:hover{
-  background-color: #26580f;
+  color:#fdd700;
   border: none;
-  padding: 10px 7px 10px 5px;
 }
 
 .login{
@@ -224,7 +248,7 @@ padding: 10px 5px 10px 5px;
   margin-top: 0;
   height: 40px;
   width: 1502px;
-  background-color: #fdd700;;
+  background-color: #fdd700;
   color:white;
   text-align: center;
   font-family: Arial;
@@ -250,13 +274,13 @@ padding: 10px 5px 10px 5px;
 .first{
   height: 370px;
   width: 1303px;
-  background-color: #828282;
+  background-color: #CCCCCC;
   display:inline-block;
   transition: background-color .15s;
 }
 
 .first:hover{
-  background-color: #26580f;
+  background-color: #008080;
   color: white;
 }
 
@@ -292,6 +316,12 @@ padding: 10px 5px 10px 5px;
   margin-left: 20px;
 }
 
+.pov{
+  margin-left: 20px;
+}
+.pova:hover{
+  text-decoration: underline;
+}
 .giz{
   font-size: 20px;
   margin-left: 20px;
@@ -335,4 +365,8 @@ padding: 10px 5px 10px 5px;
   margin-left: 50px;
   width:400px;
   height: 290px;
+}
+
+.bahay:hover{
+  color: #fdd700;
 }
