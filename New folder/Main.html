@@ -3,10 +3,33 @@
   <head>
     <title>frfr</title>
     <link rel="stylesheet" href="CSS/oliver.css">
+
+    <style>
+      .picc {
+          width: 100%;
+          overflow: hidden;
+      }
+  
+      .picc video {
+          width: 100%;
+          height: auto;
+          display: block;
+      }
+  </style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var aboutButton = document.getElementById('aboutButton');
+    aboutButton.addEventListener('click', function () {
+      window.location.href = 'home.html';
+    });
+  });
+</script>
+
   </head>
     
   <body style=" 
-  background-color: #001f3f;">
+  background-color: white;">
     <!--<div style="
       display: flex;
       flex-direction: row;
@@ -34,13 +57,18 @@
       <div class="right">right section</div>
     </div>-->
 
+    
     <div class="header">
 
       <div class="burger">
-        <img class=ham src="headerpics/m2i8G6G6b1m2A0G6-removebg-preview.png">
+        <img class="cyber" src="Pic/Screenshot 2023-11-26 224730.png">
       </div>
+
       <div class="text">
         <input class="search" type="text" placeholder="Search">
+        <div class="serbut">
+          <img class="ser" src="Pic/174044.png">
+        </div>
       </div>
 
       <div class="inn">
@@ -52,24 +80,27 @@
 
     <div class="buttons">
       <div class="home">
-        <buttton class="bahay">Home</a></buttton>
-        <buttton class="mob">Mobiles</buttton>
-        <buttton class="computer">Computers</buttton>
-        <buttton class="tech">Tech News</buttton>
-        <buttton class="about">About</buttton>
+        <buttton class="bahay"><a href="home.html">Home</a></buttton>
+        <buttton class="mob">Hardware and Gadgets</buttton>
+        <buttton class="computer">Software and Applications</buttton>
+        <buttton class="tech">Cybersecurity</buttton>
+        <buttton class="tech">Tech Trends</buttton>
+        <buttton id="aboutButton" class="about"><a href="about.html">About</a></buttton>
       </div>
     </div>
 
     <div class="picc">
-      <iframe class="gif" src="https://www.youtube.com/watch?v=IS0SItAzEXg" frameborder="0" allowfullscreen></iframe>
-      <!--<video controls autoplay>
-        <source class="gif" src="Pic/iPhone 15 Teardown - Why is nobody talking about this_!.mp4" type="video/mp4">
+      <!--<iframe class="gif" width="560" height="315" src="https://www.youtube.com/watch?v=IS0SItAzEXg" frameborder="0" allowfullscreen></iframe>-->
+      <video autoplay loop>
+        <source class="gif" src="Pic/My Video2.mp4" type="video/mp4" ></video>
       <!--<img class="gif" src="Pic/80ab46ce3e991da1596d8358f459d587.gif">-->
+      <!--<iframe class="gif" src="https://www.youtube.com/embed/IS0SItAzEXg" autoplay></iframe>-->
     </div>
 
     <div class="news">
       <p class="line"><marquee DIRECTION=LEFT><span class="break">Breaking News: </span>PhilHealth hacked: What we know   &#183;  TECNO POVA 5 Pro 5G Review - Just PHP 10,999?   &#183;  The best laptops you can buy in 2023  &#183;  Nothing Phone (1) Review: All or Nothing </marquee></p>
     </div>
+    <hr>
 
     <div class="cont">
       <div class="first">
@@ -83,7 +114,7 @@
     </div>
 
     <div class="tent">
-      <div class="second">
+      <div class="first">
         <img class="phil" src="Pic/fe7e045093bc8a6.gif">
         <div class="pova">
         <p class="pova">PhilHealth hacked: What we know</p>
@@ -94,7 +125,7 @@
     </div>
 
     <div class="tent">
-      <div class="second">
+      <div class="first">
         <img class="techno" src="Pic/giphy.gif">
         <div class="pova">
         <p class="pova">The best laptops you can buy in 2023</p>
@@ -105,7 +136,7 @@
     </div>
 
     <div class="tent">
-      <div class="second">
+      <div class="first">
         <img class="not" src="Pic/nothing-phone-2-glyph-ringtone-composer.gif">
         <div class="pova">
         <p class="pova">Nothing Phone (1) Review: All or Nothing</p>
